@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gwallet | profile</title>
+
+    <link rel="shortcut icon" href="../images/wallet.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/navstyles.css">
+    <link rel="stylesheet" href="../styles/profilestyles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body onload="InitializeUser()">
+    <nav class="nav">
+        <h1 class="nav_brand"><a href="/" style="color: #5463FF">Gwallet</a></h1>
+        <ul class="nav_links">
+            <li><i class="fas fa-user-circle" style="color: #5463FF;margin-right: 5px;font-size:15px;"></i><a href="/" style="font-size:15px;" id="user_name"></a></li>
+            <!-- <li><a href="#about">About</a></li>
+            <li><a href="/">Contact</a></li> -->
+            <!-- <li class="search"><input  type="text" placeholder="search..."><i class="fas fa-search"></i></li> -->
+
+            <li ><button onclick="changeToLogIn()" class="btn btn_primary br-10" >Log Out</button></li>
+        </ul>
+    
+        <span class="menu" onclick="myFn()">
+            <div class="hmen" onclick="myFn()"></div>
+            <div class="hmen" onclick="myFn()"></div>
+            <div class="hmen" onclick="myFn()"></div>
+        </span>
+    </nav>
+    
+    <aside class="side_menu" id="nav2">
+        <div>
+            <h1 class="nav_brand">Gwallet</h1><i class="fas fa-times-circle" onclick="myFn2()"></i>
+        </div>
+        <ul class="side_links">
+            <!-- <li><a href="/"><i class="fas fa-home"></i> home</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="/"><i class="fas fa-comment-alt"></i> Contact</a></li> -->
+            <li class="search"><input  type="text" placeholder="search..."><i class="fas fa-search"></i></li>
+            <li ><button onclick="changeToLogIn()" class="btn btn_primary br-10" id="user_name">Log Out</button></li>
+        </ul>
+    </aside>
+  <br><br>
+  <h1 style="text-align:center;color: #fff;"><i class="fas fa-dollar-sign" style="color: #fff"></i> 0</h1><br>
+  <p style="text-align:center;color: #fff;font-weight: 300;letter-spacing:5px;">Total Balance</p>
+    
+  <main class="Container">
+      <div class="Container1">
+          <div class="container2">
+              <span class="icons"><i class="fas fa-plus-circle"></i> Add</span>
+              <span class="icons"><i class="fas fa-credit-card"></i>Pay</span>
+              <span class="icons"><i class="fas fa-history"></i>History</span>
+          </div>
+          <hr>
+          <!-- <div>
+            <img src="../" alt="">
+          </div> -->
+      </div>
+
+  </main>
+  <script src="./js/navfunction.js"></script>
+<script src="../js/profile.js"></script>
+</body>
+</html>
